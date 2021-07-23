@@ -17,7 +17,14 @@
     <!-- <link rel="stylesheet" href="sliderStyle.css"> -->
     <link rel="icon" href="images/mock_logo.jpg">
 </head>
+<script>
+    const toggleButton = document.getElementsByClassName('toggleBtn')[0]
+const navbarLinks = document.getElementsByClassName('navBar ul')[0]
 
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+</script>
 <body id="top">
     <header>
         <div class="hospLogo">
@@ -26,22 +33,30 @@
         <div class="hospDes"> Krishna Women's Hospital,<br> Ahmedabad</div>
         <div class="headInfo">
             <div class="phone"> <img src="images/phone_icon-removebg-preview.png"> &nbsp +1 (668) 712 3428</div>
-            <div class="opdTimes"> <img src="images/calender_icon-removebg-preview.png"> &nbsp OPD Timings: 11AM - 7PM</div>
-            <div class="location"><img src="images/location_icon.jpg"> <a href="#googleMaps">Click for Location</a></div>
+            <div class="opdTimes"> <img src="images/calender_icon-removebg-preview.png"> &nbsp OPD Timings: 11AM - 7PM
+            </div>
+            <div class="location"><img src="images/location_icon.jpg"> <a href="#googleMaps">Click for Location</a>
+            </div>
         </div>
     </header>
-
-    <nav class="navBar">
-        <ul>
-            <li class="button"><a href="#appointment">Make an Appointment</button></li>
-                <li class="link"><a href="#home">Home</a></li>
-                <li class="link"><a href="#about">About Krishna</a></li>
-                <li class="link"><a href="#services">Services</a></li>
-                <li class="link"><a href="#team">Doctors&Staff</a></li>
-            <li class="link"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="home">
+    <div class="navBlock">
+        <div class="navBtn">
+            <a class="toggleBtn">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </a>
+        </div>
+        <nav class="navBar">
+            <ul>
+                <li class="button"><a href="#appointment">Make an Appointment</button></li>
+                    <li class="link"><a href="#home">Home</a></li>
+                    <li class="link"><a href="#about">About Krishna</a></li>
+                    <li class="link"><a href="#services">Services</a></li>
+                    <li class="link"><a href="#team">Doctors&Staff</a></li>
+                    <li class="link"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+            <section id="home">
         <div class="homeSec">
             <div class="homeLeft">
                 <div class="homeTitle">
@@ -154,7 +169,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="visitDocsBlock1">
             <div class="visitDocs">
                 <div class="visitDocsImg">
@@ -219,7 +234,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
         <div class="teamStaffTitle">
             <h1>Staff Team</h1>
@@ -338,7 +353,7 @@
                 <h1>Contact Info</h1>
                 <p> Address - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa reiciendis totam illo
                     suscipit accusamus, blanditiis illum, ad placeat ducimus, unde quasi quis veritatis.</p>
-                    <br>
+                <br>
                 <p><img class="phone" src="images/phone_icon-removebg-preview.png"> &nbsp &nbsp+1 (668) 712 3428 <br>
                     <img class="mail" src="images/mail_icon.jpg"> krishnahosp@gmail.com
                 </p>
@@ -358,7 +373,7 @@
         </div>
         <div class="footer">
             <p class="copyright">Copyright &copy; Krishna Women's Hospital</p>
-            <p class="developers">Developers - 
+            <p class="developers">Developers -
                 <a href="https://www.linkedin.com/in/vishvesh-trivedi-783116214/" target="_blank">Vishvesh Trivedi</a>
                 <a href="" target="_blank">Neelav Bhatiya</a>
                 <a href="" target="_blank">Riya Shah</a>
@@ -370,4 +385,5 @@
     </section>
 
 </body>
+
 </html>

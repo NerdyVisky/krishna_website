@@ -16,6 +16,7 @@ header {
     background-color: white;
     border-top: 1px solid lightgrey; 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     overflow-x: hidden;
 }
@@ -90,23 +91,26 @@ header div.headInfo div.location a:hover{
     background-color: rgb(1, 36, 151);
     color: white;
 }
-
 .toggleBtn{
     position: sticky;
     top: 20px;
-    left: 25px;
+    left: 30px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 40px;
     height: 30px;
-    /* padding: 1px; */
+    padding: 1px;
 }
 .toggleBtn .bar{
-    background-color: black;
+    background-color: white;
     width: 100%; height: 3px;
     border-radius: 15px;
     
+}
+.navBlock{
+    position: sticky;
+    top: 0px;
 }
 
 .navBar {
@@ -114,7 +118,6 @@ header div.headInfo div.location a:hover{
     overflow-x: hidden;
     width: 100%;
     background-color: rgb(236, 236, 236);
-    /* border-bottom: 1px solid rgb(228, 227, 227); */
     position: sticky;
     top: 0px;
 }
@@ -123,7 +126,6 @@ header div.headInfo div.location a:hover{
     overflow: auto;
     width: 100%;
     display: flex;
-
 }
 
 .navBar ul li {
@@ -186,7 +188,7 @@ div.homeSec {
 div.homeSec div.homeLeft {
     margin: 10px;
     padding: 10px;
-    width: 800px;
+    flex: 1;
 }
 
 div.homeSec div.homeLeft div.homeTitle h1 {
@@ -197,14 +199,13 @@ div.homeSec div.homeLeft div.homeTitle h1 {
 
 div.homeSec div.homeLeft div.homeTitle p {
     margin: 5px 0px 20px 0px;
-    width: 600px;
     font-family: 'Montserrat', sans-serif;
     color: rgb(107, 107, 107);
 }
 
 div.homeSec div.homeLeft div.homeDoctor {
     display: flex;
-    width: 60%;
+    width: 100%;
     background-color: white;
 }
 
@@ -229,6 +230,7 @@ div.homeSec div.homeLeft div.homeDoctor div.homeDocDes p {
 }
 
 div.homeSec div.homeRight {
+    flex: 1;
     margin-right: 50px;
 }
 
@@ -246,7 +248,7 @@ div.aboutSec {
 div.aboutSec div.aboutLeft {
     margin: 10px;
     padding: 10px;
-    width: 700px;
+    flex: 2;
 }
 
 div.aboutSec div.aboutLeft div.aboutTitle h1 {
@@ -257,7 +259,6 @@ div.aboutSec div.aboutLeft div.aboutTitle h1 {
 
 div.aboutSec div.aboutLeft div.aboutTitle p {
     margin: 5px 0px 20px 0px;
-    width: 600px;
     font-family: 'Montserrat', sans-serif;
     color: rgb(107, 107, 107);
 }
@@ -630,4 +631,61 @@ input[type=text], input[type=tel], input[type=date], select {
  }
 
 
+ @media(max-width: 420px){
+     header{
+         flex-direction: column;
+     }
+     header div.headInfo div.location a{
+        cursor: pointer;
+        background-color: rgb(1, 36, 151);
+        color: white;
+    }
+    .homeRight{
+        display: none;
+    }
+    div.aboutSec div.aboutRight img{
+        display: none;
+    }
+    .servicesBlock{
+        flex-direction: column;
+    }
+    div.servicesBlock div.section{
+        width: 100%;
+    }
+    div.drNilesh{
+        /* flex-direction: column; */
+    }
 
+
+}
+
+@media(max-width: 1140px){
+    .navBar ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(2, 27, 110)
+    }
+    .navBar ul li.link a{
+        color: white;
+    }
+    .navBar ul li.link a:hover{
+        background-color: white;
+    }
+    .navBlock{
+        z-index: 1;
+        position: sticky;
+        top: 0px;
+    }
+
+    .toggleBtn{
+        display: flex;
+    }
+    .navBtn{
+        background-color: rgb(2, 27, 110);
+        padding: 15px 0px;
+    }
+    .navBar ul:active{
+        display: flex;
+    }
+} 
