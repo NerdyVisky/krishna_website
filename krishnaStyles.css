@@ -366,14 +366,14 @@ div.drNileshDes h1{
     font-size: 170%;
 }
 
-div.visitDocsBlock1{
+div.visitDocsBlock1, div.visitDocsBlock2{
     display: flex;
     background-color: rgb(240, 240, 240);   
     width: 95%; height: 450px;
     margin: 0px auto 30px auto;
     border-radius: 10px;
 }
-div.visitDocsBlock1 div.visitDocs{
+div.visitDocsBlock1 div.visitDocs, div.visitDocsBlock2 div.visitDocs{
     background-color: white;
     width: 31%;
     height: 350px;
@@ -381,14 +381,14 @@ div.visitDocsBlock1 div.visitDocs{
     padding: 10px;
     border-radius: 10px;
 }
-div.visitDocsBlock1 div.visitDocs div.visitDocsImg{
+div.visitDocsBlock1 div.visitDocs div.visitDocsImg, div.visitDocsBlock2 div.visitDocs div.visitDocsImg{
     margin: 20px 30px auto 50px;
 }
-div.visitDocsBlock1 div.visitDocs div.visitDocsImg img{
+div.visitDocsBlock1 div.visitDocs div.visitDocsImg img, div.visitDocsBlock2 div.visitDocs div.visitDocsImg img{
     width: 200px;
     height: 200px;
 }
-div.visitDocsBlock1 div.visitDocs div.visitDocsDes{
+div.visitDocsBlock1 div.visitDocs div.visitDocsDes, div.visitDocsBlock2 div.visitDocs div.visitDocsDes{
     margin: 10px;
 }
 div.visitDocsBlock1 div.visitDocs div.visitDocsDes h1,
@@ -398,31 +398,6 @@ div.visitDocsBlock2 div.visitDocs div.visitDocsDes h1,
 div.visitDocsBlock2 div.visitDocs div.visitDocsDes p.title, 
 div.visitDocsBlock2 div.visitDocs div.visitDocsDes p.desc{
     text-align: center;
-}
-div.visitDocsBlock2{
-    display: flex;
-    background-color: rgb(240, 240, 240);   
-    width: 95%; height: 450px;
-    margin: 0px auto 30px auto;
-    border-radius: 10px;
-}
-div.visitDocsBlock2 div.visitDocs{
-    background-color: white;
-    width: 31%;
-    height: 350px;
-    margin: auto 30px auto 30px;
-    padding: 10px;
-    border-radius: 10px;
-}
-div.visitDocsBlock2 div.visitDocs div.visitDocsImg{
-    margin: 20px 30px auto 50px;
-}
-div.visitDocsBlock2 div.visitDocs div.visitDocsImg img{
-    width: 200px;
-    height: 200px;
-}
-div.visitDocsBlock2 div.visitDocs div.visitDocsDes{
-    margin: 10px;
 }
 
 div.teamStaffTitle{
@@ -582,7 +557,7 @@ input[type=text], input[type=tel], input[type=date], select {
       height: 40px;
   }
    div.footer p.copyright{
-       margin-top: 20px;
+      margin-top: 20px;
       position: relative;
       left: 450px;
    }
@@ -631,7 +606,7 @@ input[type=text], input[type=tel], input[type=date], select {
  }
 
 
- @media(max-width: 420px){
+ @media(max-width: 550px){
      header{
          flex-direction: column;
      }
@@ -653,13 +628,80 @@ input[type=text], input[type=tel], input[type=date], select {
         width: 100%;
     }
     div.drNilesh{
-        /* flex-direction: column; */
+        flex-direction: column;
+        width: 100%;
+        height: auto;
     }
-
-
+    div.drNileshImg{
+        margin-top: 20px;
+    }
+    div.visitDocsBlock1, div.visitDocsBlock2{
+        flex-direction: column;
+        height: auto;
+    }
+    div.visitDocsBlock1 div.visitDocs, div.visitDocsBlock2 div.visitDocs{
+        width: 95%; height: auto;
+        margin: 10px;
+    }
+    div.chiefStaffBlock{
+        flex-direction: column;
+    }
+    div.chiefStaffBlock div.chiefStaff{
+        flex-direction: column;
+        align-items: center;
+        width: 90%; height: auto;
+    }
+    div.chiefStaffBlock div.chiefStaff div.chiefStaffDes{
+        margin-bottom: 20px;
+    }
+    div.staffBlock div.staff{
+        flex-direction: column;
+        width: 100%; height: auto;
+    }
+    div.staffBlock div.staff div.staffImg img{
+        width: 100%; height: auto;
+    }
+    div.appointImg{
+        display: none;
+    }
+    div.appointForm{
+        width: 90%;
+    }
+    div.formTitle{
+        margin: 0px auto 150px auto;
+    }
+    div.contactBlock{
+        flex-direction: column;
+    }
+    div.contactBlock div.contact{
+        border-right: 1px solid white;
+    }
+    div.footer{
+        height: auto;
+    }
+    div.footer p.copyright, div.footer p.developers{
+        position: relative;
+        left: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .developers a:nth-child(2), .developers a:nth-child(3){
+        display: none;
+    } 
+    div.topBtn{
+        position: relative;
+        bottom: 145px;
+        right: 20px;
+        background-color: rgb(1, 36, 151);
+    }
+    div.topBtn a{
+        cursor: pointer;
+        color: white;
+    }
 }
 
-@media(max-width: 1140px){
+@media(max-width: 1140px)
+{
     .navBar ul{
         display: none;
         flex-direction: column;
