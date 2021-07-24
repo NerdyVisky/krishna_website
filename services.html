@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Services</title>
+    <link rel="icon" href="images/mock_logo.jpg">
+    <link rel="stylesheet" href="servicesStyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="hospLogo">
+            <img src="images/mock_logo.jpg" alt="Krishna Hospital Logo">
+        </div>
+        <div class="hospDes"> Krishna Hospital Services</div>
+        <div class="headInfo">
+            <div class="phone"> <img src="images/phone_icon-removebg-preview.png"> &nbsp +1 (668) 712 3428 <button onclick="myFunction()">Copy</button></div>
+            <div class="opdTimes"> <img src="images/calender_icon-removebg-preview.png"> &nbsp OPD Timings: 11AM - 7PM
+            </div>
+            <div class="location"><img src="images/location_icon.jpg"> <a href="#googleMaps">Click for Location</a>
+            </div>
+        </div>
+    </header>
+    <div class="navBlock">
+        <div class="navBtn">
+            <a class="toggleBtn">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </a>
+        </div>
+        <nav class="navBar">
+            <ul>
+                <li class="link"><a href="#medtech">Medical Technologies</a></li>
+                <li class="link"><a href="#rooms">Rooms & Facilites</a></li>
+                <li class="link"><a href="#gallery">Photo Gallery</a></li>
+                <li class="link"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="googleMaps">
+        <h2 class="lineSpacing">(line spacing)</h2>
+        <h2 class="lineSpacing">(line spacing)</h2>
+        <div class="mapsBlock">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0746378372683!2d72.63792391496774!3d23.02103158495381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e865e35b9ce03%3A0xfedb59ff9bfd5ae9!2sKrishna%20Women&#39;s%20Hospital!5e0!3m2!1sen!2sin!4v1624432436172!5m2!1sen!2sin"
+                width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contactBlock">
+            <div class="contact">
+                <h1>Contact Info</h1>
+                <p> Address - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa reiciendis totam illo
+                    suscipit accusamus, blanditiis illum, ad placeat ducimus, unde quasi quis veritatis.</p>
+                <br>
+                <p><img class="phone" src="images/phone_icon-removebg-preview.png"> &nbsp &nbsp+1 (668) 712 3428 <br>
+                    <img class="mail" src="images/mail_icon.jpg"> krishnahosp@gmail.com
+                </p>
+            </div>
+            <div class="disclaimer">
+                <h1>Disclaimer</h1>
+                <div>
+                    <ol>
+                        <li>Wearing mask before arriving to the hospital is COMPULSARY.</li>
+                        <li>The online appointment booked above is not binding and may get deffered/cancelled in dire
+                            circumstances</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam doloremque consectetur odio
+                            ut rerum eum ex placeat quis. Consequatur, eaque.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="copyright">Copyright &copy; Krishna Women's Hospital</p>
+            <p class="developers">Developers -
+                <a href="https://www.linkedin.com/in/vishvesh-trivedi-783116214/" target="_blank">Vishvesh Trivedi</a>
+                <a href="" target="_blank">Neelav Bhatiya</a>
+                <a href="" target="_blank">Riya Shah</a>
+            </p>
+        </div>
+        <div class="topBtn">
+            <a href="#top">^</a>
+        </div>
+    </section>
+</body>
+<script>
+//  error - javascript does not function
+    function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+</html>

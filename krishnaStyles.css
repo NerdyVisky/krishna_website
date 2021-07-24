@@ -609,6 +609,7 @@ input[type=text], input[type=tel], input[type=date], select {
  @media(max-width: 550px){
      header{
          flex-direction: column;
+         align-items: flex-start;
      }
      header div.headInfo div.location a{
         cursor: pointer;
