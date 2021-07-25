@@ -203,14 +203,22 @@ header div.headInfo div.location a:hover{
     border-radius: 25px;
 }
 
-.scrolldown{
-    margin-left: 40px;
+.scrolldown, .scrolldown3{
+    margin-left: 10vh;
     width: 7%;
     height: 100px;
 }
-.scrolldown img{
+.scrolldown img, .scrolldown2 img, .scrolldown3 img{
     width: 100%;
     height: 90px;
+}
+.scrolldown2{
+    margin-left: 185vh;
+    width: 7%;
+    height: 100px;
+}
+.scrolldown3{
+    margin: 10px 0px -55px 10vh;
 }
 .medproBlock{
     display: flex;
@@ -248,7 +256,7 @@ header div.headInfo div.location a:hover{
     /* background-color: lightgrey; */
 }
 .itemText{
-    background-color: rgba(250, 250, 250, 0.8);
+    background-color: rgba(250, 250, 250, 0.85);
     width: 40%;
     height: auto;
     display: flex;
@@ -289,7 +297,110 @@ header div.headInfo div.location a:hover{
 .oddImg img{
     margin-left: 85px;
 }
+.roomBlock{
+    display: flex;
+    align-items: center;
+    margin: 50px 50px 0px 50px;
+}
+.roomBlock:nth-child(3), .roomBlock:nth-child(5){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.roomText{
+    flex: 2;
+}
+.evenRoom{
+    margin-left: 35px;
+}
+.roomTitle{
+    font-size: 175%;
+    color: rgb(1, 25, 104);
+    margin: 10px;
+}
+.roomDes{
+    margin: 10px 30px 10px 10px;
+}
+.roomDes p{
+    line-height: 1.8;
+}
+.slider{
+    flex: 3;
+	width: 100%;
+    height: 400px;
+	margin:auto;
+	position: relative;
+	overflow: hidden;
+    border-radius: 30px;
+}
+.gallerySlider{
+    width: 70%;
+    height: 450px;
+    flex: 1;
+    margin: 70px auto;
+}
 
+.slider .left-slide,.slider .right-slide{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  color: rgb(1, 25, 104);
+  font-size: 20px;
+  top:50%;
+  cursor: pointer;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+  
+}
+.slider .left-slide:hover,.slider .right-slide:hover{
+ box-shadow: 0px 0px 10px black;
+ background-color: #29a8e2;
+}
+
+.slider .left-slide{
+	left: 30px;
+}
+.slider .right-slide{
+	right: 30px;
+}
+.slider .slider-items .itemslider img{
+	width: 100%;
+	display: block;
+	animation:zoom 1s ease;
+}
+
+@keyframes zoom{
+	0%{transform: scale(2);opacity: 0}
+	50%{transform: scale(2);}
+	100%{transform: scale(1);opacity:1}
+}
+.slider .slider-items .itemslider{
+	display: none;
+	position: relative;
+}
+
+.slider .slider-items .itemslider.active{
+	display: block;
+}
+.galleryBlock{
+    background-color: rgba(240, 240, 240);
+    padding: 10px;
+}
+.galleryTitle h1{
+    margin: 20px 95vh;
+    font-size: 275%;
+    color: rgb(1, 25, 104);
+}
+.galleryDes{
+    width: 50%;
+    margin:  30px auto;
+}
+.galleryDes p{
+    line-height: 1.8;
+    align-items: justify;
+}
 div.contactBlock{
     display: flex;
     border-bottom: 1px solid rgb(200, 200, 200);
