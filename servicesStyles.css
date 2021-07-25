@@ -57,6 +57,14 @@ header div.headInfo div.phone {
     font-family: 'Montserrat', sans-serif;
 }
 
+#display{
+    display: inline;
+}
+#display:active{
+    cursor: pointer;
+    background-color: rgb(207, 206, 206);
+}
+
 .phone img, .opdTimes img{
     width: 12px;
 }
