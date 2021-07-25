@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Montserrat;
+    max-width:100%;
 }
 html{
     scroll-behavior: smooth;
@@ -211,6 +212,83 @@ header div.headInfo div.location a:hover{
     width: 100%;
     height: 90px;
 }
+.medproBlock{
+    display: flex;
+    flex-direction: column;
+    margin-top: -55px;
+    background-color: rgb(245, 245, 245);
+}
+.medproTitle{
+    margin: 80px 0px 30px 80px;
+}
+.medproTitle h1{
+    font-size: 250%;
+    color: rgb(1, 25, 104);
+}
+.medproDes{
+    width: 85%;
+    margin: 0px 0px 30px 80px;
+}
+.medproDes p{
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+.medprogrid{
+    margin: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 30px; column-gap: 30px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    /* background-color: lightgrey; */
+}
+.itemText{
+    background-color: rgba(250, 250, 250, 0.8);
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    border-radius: 25px;
+}
+.itemText:nth-child(odd){
+    margin-right: -275px;
+}
+.itemText:nth-child(even){
+    margin-left: -150px;
+}
+.itemTitle{
+    color: rgb(1, 25, 104);
+    margin: 20px 20px 10px 20px;
+    font-size: 120%;
+}
+.itemDes{
+    margin: 0px 20px 20px 20px;
+    line-height: 1.6;
+}
+
+.itemImg{
+    /* margin-left: 20px; */
+    width: 85%;
+    height: 350px;
+    border-radius: 25px;
+}
+.itemImg img{
+    width: 85%;
+    height: 350px;
+    border-radius: 25px;
+}
+.oddImg{
+    margin-left: 85px;
+}
+.oddImg img{
+    margin-left: 85px;
+}
 
 div.contactBlock{
     display: flex;
@@ -232,7 +310,6 @@ div.contactBlock div.contact{
    top: 8px;
    right: 5px;
    width: 27px;
-   
 }
 
 div.contactBlock div.contact h1,  div.contactBlock div.disclaimer h1{
