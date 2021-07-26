@@ -331,6 +331,19 @@ div.techDes h1, div.roomDes h1, div.galleryDes h1{
     margin: 5px;
     padding: 10px 0px 10px 0px;
 }
+div.techDes h1 a, div.roomDes h1 a, div.galleryDes h1 a{
+    text-decoration: none;
+}
+div.techDes h1 a:hover, div.roomDes h1 a:hover, div.galleryDes h1 a:hover{
+    color: rgb(1, 95, 1);
+}
+div.techDes .clickhere, div.roomDes .clickhere, div.galleryDes .clickhere{
+    text-align: center;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: black;
+}
+
 div.techDes p, div.roomDes p, div.galleryDes p{
     text-align: justify;
     color: rgb(107, 107, 107);

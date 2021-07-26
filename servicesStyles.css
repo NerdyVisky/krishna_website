@@ -160,9 +160,7 @@ header div.headInfo div.location a:hover{
     color: black;
     font-weight: bold;
 }
-
 .introBlock{
-    /* background-color: rgb(228, 228, 228); */
     margin-top: 50px;
     width:100%;
     height: 550px;
@@ -369,6 +367,9 @@ header div.headInfo div.location a:hover{
 	width: 100%;
 	display: block;
 	animation:zoom 1s ease;
+}
+.linespacing{
+    visibility:hidden;
 }
 
 @keyframes zoom{
