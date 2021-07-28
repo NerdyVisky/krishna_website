@@ -251,7 +251,6 @@ header div.headInfo div.location a:hover{
     align-items: center;
     justify-content: space-around;
     height: 350px;
-    /* background-color: lightgrey; */
 }
 .itemText{
     background-color: rgba(250, 250, 250, 0.85);
@@ -259,7 +258,7 @@ header div.headInfo div.location a:hover{
     height: auto;
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    z-index: 0;
     border-radius: 25px;
 }
 .itemText:nth-child(odd){
@@ -497,6 +496,125 @@ div.topBtn a:hover{
        background-color: rgb(1, 36, 151);
        color: white;
    }
+   .scrolldown, .scrolldown2, .scrolldown3{
+       margin-left: 70vw;
+       width: 18%;
+       margin-bottom: -90px;
+   }
+   .scrolldown img, .scrolldown2 img, .scrolldown3 img{
+       height: 70px;
+   }
+   .introBlock{
+       display: block;
+       height: auto;
+       margin-top: 20px;
+   }
+   .introText{
+       background-color: white;
+       width: 95%;
+       margin: 10px;
+       padding: 10px;
+       height: auto;
+   }
+   .introTitle{
+       margin: 0px 15px;
+   }
+   .introDes{
+    text-align: justify;
+   }
+   .introImg{
+       display: none;
+   }
+   .medproBlock{
+       display: block;
+       margin: 15px;
+       background-color: rgb(240, 240, 240);
+       border-radius: 25px;
+   }
+   .medproTitle{
+       width: 95%;
+       margin: 30px;
+       padding-top: 20px;
+   }
+   .medproTitle h1{
+       width: 95%;
+   }
+   .medproDes{
+       width: 95%;
+       margin: 30px;
+       height: auto;
+   }
+   .medproDes p{
+       margin-right: 30px;
+       text-align: justify;
+       padding-bottom: 10px;
+   }
+   .medprogrid{
+       display: flex;
+       flex-direction: column;
+       margin: 0px 25px;
+   }
+   .item{
+       height: auto;
+   }
+   .itemText{
+       width: 65%;
+   }
+   .itemText:nth-child(odd){
+       margin-right: -275px;
+   }
+   .itemImg{
+       width: 90%;
+       margin-right: 20px;
+       height: auto;
+   }
+   .itemImg img{
+       width: 90%;
+       height: 275px;
+   }
+   .itemDes{
+       display: none;
+   }
+   .oddImg{
+    margin-left: 60px;
+}
+   .oddImg img{
+    margin-left: 60px;
+}
+.roomBlock{
+    flex-direction: column;
+    margin: 20px;
+}
+.roomBlock:nth-child(3), .roomBlock:nth-child(5){
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    border-radius: 25px;
+}
+.evenRoom{
+    margin: 20px;
+}
+.galleryBlock{
+    padding: 0px;
+    margin: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.galleryTitle h1{
+    margin: 20px 25vw;
+}
+.galleryDes{
+    width: 75%;
+}
+.galleryDes p{
+    text-align: justify; 
+}
+.slider{
+    width: 100%;
+    height: auto;
+}
+.gallerySlider{
+    margin: 0px auto;
+}
    div.contactBlock{
     flex-direction: column;
 }
