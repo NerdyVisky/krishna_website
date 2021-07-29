@@ -16,15 +16,8 @@
     <link rel="stylesheet" href="krishnaStyles.css">
     <!-- <link rel="stylesheet" href="sliderStyle.css"> -->
     <link rel="icon" href="images/mock_logo.jpg">
+    <script src="https://kit.fontawesome.com/cc0efb1716.js" crossorigin="anonymous"></script>
 </head>
-<script>
-    const toggleButton = document.getElementsByClassName('toggleBtn')[0]
-    const navbarLinks = document.getElementsByClassName('navBar ul')[0]
-
-    toggleButton.addEventListener('click', () => {
-        navbarLinks.classList.toggle('active')
-    })
-</script>
 
 <body id="top">
     <header>
@@ -42,19 +35,22 @@
         </div>
     </header>
     <div class="navBlock">
-        <div class="navBtn">
-            <a class="toggleBtn">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </a>
-        </div>
         <nav class="navBar">
-            <ul>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
                 <li class="button"><a href="#appointment">Make Appointment</button></li>
                 <li class="link"><a href="#home">Home</a></li>
                 <li class="link"><a href="#about">About Krishna</a></li>
                 <li class="link"><a href="#services">Services</a></li>
                 <li class="link"><a href="#team">Doctors&Staff</a></li>
                 <li class="link"><a href="#contact">Contact</a></li>
+                <div class="devs">Developer Contacts</div>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <a href="https://www.linkedin.com/in/vishvesh-trivedi-783116214/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/viskyyy.___/" target="_blank"><i class="fab fa-instagram" ></i></a>
+                    <a href="https://github.com/NerdyVisky" target="_blank"><i class="fab fa-github"></i></a>
+                </span>
             </ul>
         </nav>
     </div>
@@ -390,7 +386,7 @@
             <a href="#top">^</a>
         </div>
     </section>
-
+    <script src="./toggle.js"></script>
     <script>
         function copyText(element) {
             var range, selection, worked;

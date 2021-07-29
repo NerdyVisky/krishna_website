@@ -102,27 +102,9 @@ header div.headInfo div.location a:hover{
     background-color: rgb(1, 36, 151);
     color: white;
 }
-.toggleBtn{
-    position: sticky;
-    top: 20px;
-    left: 30px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40px;
-    height: 30px;
-    padding: 1px;
-}
-.toggleBtn .bar{
-    background-color: white;
-    width: 100%; height: 3px;
-    border-radius: 15px;
-    
-}
 .navBlock{
     position: sticky;
     top: 0px;
-    z-index: 1000;
 }
 
 .navBar {
@@ -134,31 +116,71 @@ header div.headInfo div.location a:hover{
     top: 0px;
 }
 
-.navBar ul {
+.mainMenu {
     overflow: auto;
     width: 100%;
     display: flex;
 }
 
-.navBar ul li {
+.mainMenu li {
     list-style: none;
     padding: 15px;
     margin: 6px;
 }
 
-.navBar ul li.link a {
+.mainMenu li.link a {
+    display: inline-block;
     text-decoration: none;
     color: rgb(63, 63, 63);
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     border-radius: 4px;
-    padding: 5px 7px 5px 7px;
-    margin: 10px 5px 10px 5px;
+    margin: 0px 10px;
 }
 
-.navBar ul li.link a:hover {
+.mainMenu li.link a:hover {
     color: black;
     font-weight: bold;
+}
+.navBar .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.mainMenu li.button {
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.mainMenu li.button a {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: forestgreen;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    -webkit-transition: background 0s;
+    transition: background 1s;
+}
+
+.mainMenu li.button a:hover {
+    background-color: rgb(1, 36, 151);
+}
+.navBar .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-linkedin:hover {color: rgb(0, 110, 255);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+.devs{
+    display: none;
 }
 .introBlock{
     margin-top: 50px;
@@ -647,32 +669,62 @@ div.topBtn a{
 
 @media(max-width: 1140px)
 {
-    .navBar ul{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(2, 27, 110)
+    .navBar{
+        background-color: rgb(1, 26, 102);
     }
-    .navBar ul li.link a{
+    .navBar .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(1, 26, 102);
+        transition: top 1s ease;
+        display: none;
+    }
+    .navBar .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    .navBar .openMenu {
+        display: block;
         color: white;
     }
-    .navBar ul li.link a:hover{
-        background-color: white;
+    .navBar .openMenu:hover{
+        background-color: rgb(1, 26, 102);
     }
-    .navBlock{
-        z-index: 1;
-        position: sticky;
-        top: 0px;
+    .navBar .mainMenu li a{
+        color: white;
     }
-
-    .toggleBtn{
-        display: flex;
+    .navBar .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
     }
-    .navBtn{
-        background-color: rgb(2, 27, 110);
-        padding: 15px 0px;
+    .navBar ul li.button a{
+        background-color: transparent;
+        color: rgb(0, 90, 0);
+        font-weight: bold;
     }
-    .navBar ul:active{
-        display: flex;
+    .devs{
+        display: block;
+        color: white;
+        padding-top: 20px;
+        font-family: 'Montserrat';
+        border-top: 1px solid white;
+    }
+    .closeMenu{
+        color: white;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+        color: white;
     }
 } 
