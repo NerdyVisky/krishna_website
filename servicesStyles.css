@@ -167,6 +167,7 @@ header div.headInfo div.location a:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
 }
 .introText{
     background-color: rgba(252, 252, 252, 0.75);
@@ -184,12 +185,42 @@ header div.headInfo div.location a:hover{
     font-size: 185%;
     color:rgb(1, 25, 102);
     font-weight: 200%;
+    animation: animate1 3s ease-in 0.75s 1;
 }
+
+@keyframes animate1 {
+    0%{
+        margin-bottom: 40px;
+    }
+    75%{
+        margin-bottom: 20px;
+    }
+}
+.introTitle h1{
+    animation: text 3s 0.75s 1;
+    letter-spacing: 1px;
+}
+
+@keyframes text{
+    30%{
+        letter-spacing: 3px;
+        color: black;
+    }
+    65%{
+        letter-spacing: 1.5px;
+        color: rgb(1, 25, 102);
+    }
+    100%{
+        letter-spacing: 1px;
+    }
+}
+
 .introDes{
     margin: 0px 15px;
     padding: 5px 10px;
     line-height: 1.8;
 }
+
 .introImg{
     width: 60%;
     height: 500px;
