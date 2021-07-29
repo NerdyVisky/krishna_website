@@ -17,6 +17,13 @@
     <!-- <link rel="stylesheet" href="sliderStyle.css"> -->
     <link rel="icon" href="images/mock_logo.jpg">
     <script src="https://kit.fontawesome.com/cc0efb1716.js" crossorigin="anonymous"></script>
+    <script src="appointment.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_qnornt1gS2Nr1wYQwz81h");
+        })();
+    </script>
 </head>
 
 <body id="top">
@@ -311,29 +318,31 @@
                         <div class="name">
                             <label for="name">Patient Name</label>
                             <br>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name"
+                                required>
                         </div>
                         <div class="phone">
                             <label for="phone">Phone Number</label>
                             <br>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Mobile Number">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Mobile Number"
+                                required>
                         </div>
                         <div class="date">
                             <label for="date">Select Appointment Date</label>
                             <br>
-                            <input type="date" name="date" value="" class="form-control">
+                            <input type="date" name="date" value="" id="date" class="form-control" required>
                         </div>
                         <div class="slot">
                             <label for="slot">Preferred Time Slot</label>
                             <br>
-                            <select class="form-control">
+                            <select class="form-control" id="timeslot" required>
                                 <option>11AM - 1PM</option>
                                 <option>3PM - 5PM</option>
                                 <option>5PM - 7PM</option>
                             </select>
                         </div>
                         <div class="submitBtn">
-                            <button type="submit" class="form-control" id="submitBtn" name="submit">Submit
+                            <button onclick="sendMail()" type="submit" class="form-control" id="submitBtn" name="submit">Submit
                             </button>
                         </div>
                     </div>

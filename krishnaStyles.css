@@ -203,6 +203,15 @@ div.homeSec div.homeLeft div.homeTitle h1 {
     font-size: 300%;
     font-family: 'Montserrat', sans-serif;
     color: rgb(1, 25, 104);
+    animation: downway 3s ease-in-out 0.5s 1;
+}
+@keyframes downway{
+    0%{
+        margin-bottom: -10px;
+    }
+    75%{
+        margin-bottom: 20px;
+    }
 }
 
 div.homeSec div.homeLeft div.homeTitle p {
