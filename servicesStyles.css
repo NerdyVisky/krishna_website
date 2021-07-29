@@ -105,6 +105,7 @@ header div.headInfo div.location a:hover{
 .navBlock{
     position: sticky;
     top: 0px;
+    z-index: 1000;
 }
 
 .navBar {
@@ -193,7 +194,7 @@ header div.headInfo div.location a:hover{
 }
 .introText{
     background-color: rgba(252, 252, 252, 0.75);
-    width: 35%;
+    width: 40%;
     height: 300px;
     margin-right: -350px;
     z-index: 2;
@@ -207,29 +208,32 @@ header div.headInfo div.location a:hover{
     font-size: 185%;
     color:rgb(1, 25, 102);
     font-weight: 200%;
-    animation: animate1 3s ease-in 0.75s 1;
+    animation: animate1 2s ease-in 1s 1;
 }
 
 @keyframes animate1 {
     0%{
-        margin-bottom: 40px;
+        margin-bottom: 75px;
     }
-    75%{
-        margin-bottom: 20px;
+    50%{
+        margin-bottom: 50px;
+    }
+    100%{
+        margin-bottom: 20px
     }
 }
 .introTitle h1{
-    animation: text 3s 0.75s 1;
+    animation: text 2s 1s 1;
     letter-spacing: 1px;
 }
 
 @keyframes text{
-    30%{
-        letter-spacing: 3px;
-        color: black;
+    33%{
+        letter-spacing: 6px;
+        color: forestgreen;
     }
-    65%{
-        letter-spacing: 1.5px;
+    67%{
+        letter-spacing: 3px;
         color: rgb(1, 25, 102);
     }
     100%{

@@ -7,5 +7,5 @@ function sendMail(params){
         appointment_date: document.getElementById("date").value,
         time_slot: document.getElementById("timeslot").value,
         })
-        alert("Your appointment booking is sucessfull!");
+        alert("Your appointment has been successfully booked.");
 }
