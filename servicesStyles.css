@@ -771,4 +771,8 @@ div.topBtn a{
         padding: 12px;
         color: white;
     }
-} 
+    .medproTitle h1, .galleryTitle h1{
+        margin-top: 60px;
+    }
+}
+    
