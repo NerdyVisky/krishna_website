@@ -35,9 +35,16 @@ header div img {
 }
 
 header div.hospDes {
-    flex: 7;
+    flex: 9;
     font-size: 300%;
     font-family: 'Montserrat', sans-serif;
+}
+header div.hospLogo img{
+    height: 110px;
+    margin-left: 15px;
+}
+header div.hospDes{
+    margin-left: 20px;
 }
 
 header div.hospLogo {
@@ -47,7 +54,7 @@ header div.hospLogo {
 header div.headInfo {
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex: 5;
     background-color: white;
     border-left: 1px solid rgb(228, 227, 227);
 }
@@ -215,9 +222,6 @@ header div.headInfo div.location a:hover{
     0%{
         margin-bottom: 75px;
     }
-    50%{
-        margin-bottom: 50px;
-    }
     100%{
         margin-bottom: 20px
     }
@@ -228,16 +232,17 @@ header div.headInfo div.location a:hover{
 }
 
 @keyframes text{
-    33%{
-        letter-spacing: 6px;
-        color: forestgreen;
-    }
-    67%{
-        letter-spacing: 3px;
+    0%{
+        letter-spacing: 1px;
         color: rgb(1, 25, 102);
+    }
+    50%{
+        letter-spacing: 5px;
+        color: forestgreen;
     }
     100%{
         letter-spacing: 1px;
+        color: rgb(1, 25, 102);
     }
 }
 
@@ -548,6 +553,9 @@ div.topBtn a:hover{
         flex-direction: column;
         align-items: flex-start;
     }
+    header div.hospLogo img{
+        height: 38vh;
+    }
     header div.headInfo div.location a{
        cursor: pointer;
        background-color: rgb(1, 36, 151);
@@ -726,6 +734,7 @@ div.topBtn a{
         position: absolute;
         top: 20px;
         right: 20px;
+        z-index: 1000;
 
     }
     .navBar .openMenu {

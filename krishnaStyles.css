@@ -32,7 +32,7 @@ header div img {
 }
 
 header div.hospDes {
-    flex: 7;
+    flex: 9;
     font-size: 250%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -40,11 +40,19 @@ header div.hospDes {
 header div.hospLogo {
     flex: 1;
 }
+header div.hospLogo img{
+    height: 110px;
+    margin-left: 15px;
+}
+header div.hospDes{
+    margin-left: 20px;
+    margin-top: 10px;
+}
 
 header div.headInfo {
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex: 5;
     background-color: white;
     border-left: 1px solid rgb(228, 227, 227);
 }
@@ -102,6 +110,7 @@ header div.headInfo div.location a:hover{
 .navBlock{
     position: sticky;
     top: 0px;
+    z-index: 1000;
 }
 
 .navBar {
@@ -664,6 +673,9 @@ input[type=text], input[type=tel], input[type=date], select {
          flex-direction: column;
          align-items: flex-start;
      }
+     header div.hospLogo img{
+         height: 38vh;
+     }
      header div.headInfo div.location a{
         cursor: pointer;
         background-color: rgb(1, 36, 151);
@@ -822,5 +834,8 @@ input[type=text], input[type=tel], input[type=date], select {
         display: inline-block;
         padding: 12px;
         color: white;
+    }
+    .homeSec{
+        margin-top: 15px;
     }
 } 
