@@ -528,19 +528,40 @@ div.staffBlock div.staff div.staffDes p{
 div.appointBlock{
     display: flex;
 }
-div.appointImg{
-    margin-top: -20px;
+div.appointDisc{
+    background-color: rgba(217, 217, 255, 0.2);
+    margin: 10px;
+    padding: 20px;
     width: 50%;
+    border-radius: 10px;
 }
-div.appointImg img{
-    width: 100%;
-    height: 640px;
+div.appointDiscTitle h1{
+    margin: 20px;
+    font-size: 200%;
+    text-transform: uppercase;
+    color: rgb(189, 1, 1);
+}
+.charges{
+    margin-left: 20px;
+}
+.charges li{
+    font-weight: bolder;
+    font-size: 120%;
+    list-style-type: disc;
+}
+div.discList{
+    margin: 10px;
+}
+.discList .discPoints{
+    line-height: 1.6;
+    margin: 15px;
+    list-style-type:upper-latin;
 }
 div.appointForm{
     margin: auto;
 }
 div.formTitle{
-    margin: 0px auto 150px -40px;
+    margin: 0px auto 150px auto;
 }
 div.formTitle h1{
     font-size: 300%;
@@ -736,8 +757,11 @@ input[type=text], input[type=tel], input[type=date], select {
     div.staffBlock div.staff div.staffImg img{
         width: 100%; height: auto;
     }
-    div.appointImg{
-        display: none;
+    div.appointBlock{
+        flex-direction: column;
+    }
+    div.appointDisc{
+        width: 98%;
     }
     div.appointForm{
         width: 90%;
