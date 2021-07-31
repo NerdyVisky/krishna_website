@@ -17,7 +17,6 @@
     <!-- <link rel="stylesheet" href="sliderStyle.css"> -->
     <link rel="icon" href="images/krishna_logo.jpg">
     <script src="https://kit.fontawesome.com/cc0efb1716.js" crossorigin="anonymous"></script>
-    <script src="appointment.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
@@ -343,6 +342,14 @@
                             <input type="tel" class="form-control" id="phone" name="phone" placeholder="Mobile Number"
                                 required>
                         </div>
+                        <div class="case">
+                            <label for="phone">New Case</label>
+                            <input type="radio" class="form-control" id="phone" name="case" 
+                                required>
+                            <label for="phone">Old Case</label>
+                            <input type="radio" class="form-control" id="phone" name="case" 
+                                required>
+                        </div>
                         <div class="date">
                             <label for="date">Select Appointment Date</label>
                             <br>
@@ -413,32 +420,14 @@
         </div>
     </section>
     <script src="./toggle.js"></script>
-    <script>
-        function copyText(element) {
-            var range, selection, worked;
-
-            if (document.body.createTextRange) {
-                range = document.body.createTextRange();
-                range.moveToElementText(element);
-                range.select();
-            } else if (window.getSelection) {
-                selection = window.getSelection();
-                range = document.createRange();
-                range.selectNodeContents(element);
-                selection.removeAllRanges();
-                selection.addRange(range);
-            }
-
-            try {
-                document.execCommand('copy');
-                alert('Number copied');
-            }
-            catch (err) {
-                alert('unable to copy text');
-            }
-        }
+    <script src="./copytext.js"></script>
+    <script src="appointment.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_qnornt1gS2Nr1wYQwz81h");
+        })();
     </script>
-
 </body>
 
 </html>
