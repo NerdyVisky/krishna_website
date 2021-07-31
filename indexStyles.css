@@ -228,6 +228,7 @@ div.homeSec div.homeLeft div.homeTitle p {
     font-family: 'Montserrat', sans-serif;
     color: rgb(107, 107, 107);
     line-height: 1.6;
+    text-align: justify;
 }
 
 div.homeSec div.homeLeft div.homeDoctor {
@@ -300,6 +301,7 @@ div.aboutSec div.aboutLeft div.aboutTitle p {
     font-family: 'Montserrat', sans-serif;
     color: rgb(107, 107, 107);
     line-height: 1.6;
+    text-align: justify;
 }
 
 div.aboutSec div.aboutLeft div.aboutDoctor {
@@ -338,6 +340,22 @@ div.aboutSec div.aboutRight img {
     width: 650px;
     border-radius: 25px;
 }
+.gotoservices{
+    padding: 15px;
+    background-color: rgb(241, 241, 241);
+    display: inline-block;
+    margin: 5px 0px 5px 15px;
+    border-radius: 50px;
+}
+.gotoservices a{
+    text-decoration: none;
+    color:rgb(1, 25, 104);
+    font-size: 1.5rem;
+}
+.gotoservices a i{
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
 
 div.servicesBlock{
     display: flex;
@@ -354,7 +372,7 @@ div.servicesBlock div.section{
 }
 div.serviceImg img{
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-radius: 25px;
 }
 div.techDes, div.roomDes, div.galleryDes{
@@ -423,6 +441,9 @@ div.drNileshDes{
 }
 div.drNileshDes h1{
     font-size: 170%;
+}
+.drNileshDes .desc{
+    line-height: 1.5;
 }
 
 div.visitDocsBlock1, div.visitDocsBlock2{
@@ -589,6 +610,7 @@ input[type=text], input[type=tel], input[type=date], select {
     border: 1px solid rgb(240, 240, 240);
     padding: 20px 10px;
     margin: 10px 0px;
+    border-radius: 4px;
   }
   input[type=radio]{
       margin-right: 100px;
@@ -655,7 +677,7 @@ input[type=text], input[type=tel], input[type=date], select {
    div.footer p.developers{
        margin: 20px 10px 10px 10px;
        position: relative;
-       left: 340px;
+       left: 300px;
    }
    div.footer p.developers a{
        text-decoration: none;
@@ -664,7 +686,7 @@ input[type=text], input[type=tel], input[type=date], select {
        border-radius: 5px 0px 0px 5px;
    }
 
-   div.footer p.developers a:nth-child(1), div.footer p.developers a:nth-child(2){
+   div.footer p.developers a:nth-child(2), div.footer p.developers a:nth-child(3){
        border-right: 2px solid rgb(196, 195, 195);
    }
 
@@ -724,6 +746,9 @@ input[type=text], input[type=tel], input[type=date], select {
     }
     div.aboutSec div.aboutRight img{
         display: none;
+    }
+    .gotoservices{
+        margin: 0px;
     }
     .servicesBlock{
         flex-direction: column;
@@ -797,9 +822,14 @@ input[type=text], input[type=tel], input[type=date], select {
         margin-top: 30px;
         margin-left: 20px;
     }
-    .developers a:nth-child(2), .developers a:nth-child(3){
-        display: none;
-    } 
+    div.footer p.developers a{
+        display: block;
+        margin: 5px 0px 5px -10px;
+        background-color: rgb(238, 238, 238);
+    }
+    div.footer p.developers a:nth-child(2), div.footer p.developers a:nth-child(3){
+        border-right: none;
+    }
     div.topBtn{
         position: relative;
         bottom: 145px;

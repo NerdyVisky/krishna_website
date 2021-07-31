@@ -415,7 +415,8 @@ header div.headInfo div.location a:hover{
 }
 .slider .left-slide:hover,.slider .right-slide:hover{
  box-shadow: 0px 0px 10px black;
- background-color: #29a8e2;
+ background-color: #003953;
+ color: white;
 }
 
 .slider .left-slide{
@@ -506,7 +507,7 @@ div.footer{
  div.footer p.developers{
      margin: 20px 10px 10px 10px;
      position: relative;
-     left: 340px;
+     left: 300px;
  }
  div.footer p.developers a{
      text-decoration: none;
@@ -515,7 +516,7 @@ div.footer{
      border-radius: 5px 0px 0px 5px;
  }
 
- div.footer p.developers a:nth-child(1), div.footer p.developers a:nth-child(2){
+ div.footer p.developers a:nth-child(2), div.footer p.developers a:nth-child(3){
      border-right: 2px solid rgb(196, 195, 195);
  }
 
@@ -695,9 +696,14 @@ div.footer p.copyright, div.footer p.developers{
     margin-top: 30px;
     margin-left: 20px;
 }
-.developers a:nth-child(2), .developers a:nth-child(3){
-    display: none;
-} 
+div.footer p.developers a{
+    display: block;
+    margin: 5px 0px 5px -10px;
+    background-color: rgb(238, 238, 238);
+}
+div.footer p.developers a:nth-child(2), div.footer p.developers a:nth-child(3){
+    border-right: none;
+}
 div.topBtn{
     position: relative;
     bottom: 145px;
