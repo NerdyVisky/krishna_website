@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <title>Appointment Confirmation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_DAyKsKtcpDpXT7hAAZrQk");
+        })();
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Montserrat;
+        }
+
+        header {
+            width: 100%;
+            margin-top: 15px;
+            background-color: white;
+            border-top: 1px solid lightgrey;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        header div {
+            flex-basis: 30%;
+            padding: 10px;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        header div img {
+            width: 90%;
+        }
+
+        header div.hospDes {
+            flex: 9;
+            font-size: 250%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header div.hospLogo {
+            flex: 1;
+        }
+
+        header div.hospLogo img {
+            height: 110px;
+            margin-left: 15px;
+        }
+
+        header div.hospDes {
+            padding-left: 30px;
+        }
+
+        header div.headInfo {
+            flex: 4;
+            border-left: 1px solid lightgrey;
+        }
+        .headInfo .phone {
+            margin-top: 35px;
+            margin-left: 10px;
+        }
+        .mainBlock{
+            display: flex;
+        }
+        .details{
+            flex: 3;
+        }
+        .note{
+            flex: 2;
+            background-color: rgb(255, 241, 241);
+            align-self: center;
+            padding: 30px;
+            margin-left: -75px;
+            margin-right: 20px;
+            border-radius: 15px;
+        }
+        .note ul{
+            margin-top: 20px;
+        }
+        .noteTitle{
+            margin-top: 0px;
+            text-align: center;
+            text-transform: uppercase;
+            color: red;
+        }
+        .notePoints{
+            margin: 10px;
+            line-height: 1.4;
+            list-style-type: lower-roman;
+        }
+
+        #tableMain{
+            border-collapse: collapse;
+            margin: 30px auto 0px auto;
+            width: 500px;
+            font-size: 125%;
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(247, 245, 255);
+        }
+        #tableMain tbody tr td{
+            padding: 15px;
+            border: 1px solid lightgrey;
+        }
+        .title{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+        }
+        .buttons button {
+            letter-spacing: 1.5px;
+            margin: 20px 10px;
+            padding: 0px 25px;
+            width: auto;
+            height: 30px;
+            background-color: rgb(61, 92, 192);
+            color: white;
+            border: 0px;
+            border-radius: 5px;
+        }
+
+
+        .buttons button:hover {
+            background-color: forestgreen;
+        }
+        .buttons #confirmbtn{
+            background-color: rgb(26, 107, 26);
+        }
+        .buttons #confirmbtn:hover{
+            background-color: rgb(32, 56, 136);
+        }
+
+        div~button {
+            width: 30%;
+            height: 25px;
+            margin-left: 475px;
+            background-color: rgb(95, 95, 95);
+            color: white;
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .swal-overlay {
+            background-color: rgba(43, 165, 137, 0.4);
+            overflow: visible;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swal-modal {
+            height: 50%;
+            background-color: white;
+        }
+
+        .swal-title {
+            font: bold;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        .swal-text {
+            width: 100%;
+            text-align: center;
+        }
+
+        .swal-button {
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="hospLogo">
+            <img src="images/krishna_logo.jpg" alt="Krishna Hospital Logo">
+        </div>
+        <div class="hospDes"> Krishna Women's Hospital Appointments</div>
+        <div class="headInfo">
+            <p class="phone">For Appointment related queries,<br> Contact: <b>+91 9978637506</b></p>
+        </div>
+    </header>
+    <div class="mainBlock">
+        <div class="details">
+            <h1 class="title">Appointment Details</h1>
+            <table id="tableMain">
+                <tbody class="tableBody">
+                    <tr>
+                        <td>Patient's Name :</td>
+                        <td><span id="name" value=""></span></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number :</td>
+                        <td><span id="phone"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Case File :</td>
+                        <td><span id="case"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Appointment Date :</td>
+                        <td><span id="date"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Time Slot :</td>
+                        <td><span id="time"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons">
+                <button onclick="document.location='index.html'">Back</button>
+                <button id="confirmbtn" onclick="sendMail()">Confirm Appointment</button>
+                <button onclick="window.print();">Print</button>
+            </div>
+        </div>
+        <div class="note">
+            <h1 class="notetitle">Important Note</h1>
+            <ul>
+                <li class="notePoints">Check your entered details, if they are correct then click on <b>'Confirm Appointment'</b>, otherwise click on <b>'Back'</b> and change details.</li>
+                <li class="notePoints">On clicking <b>'Confirm Appointment'</b> a dialog box will appear which says <b>SUCCESS! Your appointment has been successfully booked</b>, after that click <b>'Exit'</b>.</li>
+                <li class="notePoints">After your appointment is booked, click on <b>'Print'</b> to print appointment receipt and show it at hospital reception on appointment day.</li>
+                <li class="notePoints">If you are unable to make an appointment or face any other issues, please contact <b>+91 9978637506</b> for further assistance.</li>
+            </ul>
+        </div>
+    </div>
+    <script defer src="./appointment.js"></script>
+</body>
+
+</html>

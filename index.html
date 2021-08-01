@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="indexStyles.css">
-    <!-- <link rel="stylesheet" href="sliderStyle.css"> -->
     <link rel="icon" href="images/krishna_logo.jpg">
     <script src="https://kit.fontawesome.com/cc0efb1716.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -347,7 +346,7 @@
                 </ul>
             </div>
             <div class="appointForm">
-                <form action="#" id="appointForm" role="form">
+                <form action="confirmation.html" id="appointForm" role="form" name="Form" onsubmit="details()">
                     <div class="formTitle">
                         <h1>Make an appointment</h1>
                     </div>
@@ -355,39 +354,37 @@
                         <div class="name">
                             <label for="name">Patient Name</label>
                             <br>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name"
-                                required>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
                         </div>
                         <div class="phone">
                             <label for="phone">Phone Number</label>
                             <br>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Mobile Number"
-                                required>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Mobile Number" required>
                         </div>
                         <div class="case">
-                            <label for="phone">New Case</label>
-                            <input type="radio" class="form-control" id="phone" name="case" required>
-                            <label for="phone">Old Case</label>
-                            <input type="radio" class="form-control" id="phone" name="case" required>
+                            <label for="file_case">New Case</label>
+                            <input type="radio" class="form-control" id="file_case" name="file_case" value="New Case" required>
+                            <label for="file_case">Old Case</label>
+                            <input type="radio" class="form-control" id="file_case" name="file_case" value="Old Case" required>
                         </div>
                         <div class="date">
                             <label for="date">Select Appointment Date</label>
                             <br>
-                            <input type="date" name="date" value="" id="date" class="form-control" required>
+                            <input type="date" name="date" value="" id="date" class="form-control"  onchange="Day(this.value)"  required>
                         </div>
                         <div class="slot">
                             <label for="slot">Preferred Time Slot</label>
                             <br>
-                            <select class="form-control" id="timeslot" required>
-                                <option>5PM - 5:30PM</option>
-                                <option>5:30PM - 6PM</option>
-                                <option>6PM - 6:30PM</option>
-                                <option>6:30PM - 7PM</option>
+                            <select class="form-control" id="timeslot" name="slot" required>
+                                <option selected disabled>Select Time Slot</option>
+                                <option value="5PM - 5:30PM">5PM - 5:30PM</option>
+                                <option value="5:30PM - 6PM">5:30PM - 6PM</option>
+                                <option value="6PM - 6:30PM">6PM - 6:30PM</option>
+                                <option value="6:30PM - 7PM">6:30PM - 7PM</option>
                             </select>
                         </div>
                         <div class="submitBtn">
-                            <button onclick="sendMail()" type="submit" class="form-control" id="submitBtn"
-                                name="submit">Submit
+                            <button type="submit" class="form-control" id="submitBtn" name="submit">Submit
                             </button>
                         </div>
                     </div>
@@ -443,13 +440,7 @@
     </section>
     <script src="./toggle.js"></script>
     <script src="./copytext.js"></script>
-    <script src="appointment.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_qnornt1gS2Nr1wYQwz81h");
-        })();
-    </script>
+    <script src="./validation.js"></script>
 </body>
 
 </html>
