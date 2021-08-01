@@ -382,6 +382,20 @@ header div.headInfo div.location a:hover{
 .roomDes p{
     line-height: 1.8;
 }
+.roomImg{
+    flex: 3;
+    width: 100%;
+    height: 400px;
+	margin:auto;
+	position: relative;
+	overflow: hidden;
+    border-radius: 30px;
+}
+.roomImg img{
+	width: 100%;
+	display: block;
+	animation:zoom 1s ease;
+}
 .slider{
     flex: 3;
 	width: 100%;
