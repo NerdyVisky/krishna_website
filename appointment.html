@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Appointment Confirmation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="appointStyles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_DAyKsKtcpDpXT7hAAZrQk");
+        })();
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="hospLogo">
+            <img src="images/krishna_logo.jpg" alt="Krishna Hospital Logo">
+        </div>
+        <div class="hospDes"> Krishna Women's Hospital Appointments</div>
+        <div class="headInfo">
+            <p class="phone">For Appointment related queries,<br> Contact: <b>+91 9978637506</b></p>
+        </div>
+    </header>
+    <div class="mainBlock">
+        <div class="details">
+            <h1 class="title">Confirm Your Appointment</h1>
+            <table id="tableMain">
+                <tbody class="tableBody">
+                    <tr>
+                        <td>Patient's Name :</td>
+                        <td><span id="name" value=""></span></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number :</td>
+                        <td><span id="phone"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Case File :</td>
+                        <td><span id="case"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Appointment Date :</td>
+                        <td><span id="date"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Time Slot :</td>
+                        <td><span id="time"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons">
+                <button onclick="document.location='index.html'">Back</button>
+                <button id="confirmbtn" onclick="sendMail()">Confirm Appointment</button>
+                <button onclick="window.print();">Print</button>
+            </div>
+        </div>
+        <div class="note">
+            <h1 class="notetitle">Important Note</h1>
+            <ul>
+                <li class="notePoints">Check your entered details, if they are correct then click on <b>'Confirm
+                        Appointment'</b>, otherwise click on <b>'Back'</b> and change details.</li>
+                <li class="notePoints">On clicking <b>'Confirm Appointment'</b> a dialog box will appear which says
+                    <b>SUCCESS! Your appointment has been successfully booked</b>, after that click <b>'Exit'</b>.</li>
+                <li class="notePoints">After your appointment is booked, click on <b>'Print'</b> to print appointment
+                    receipt and show it at hospital reception on appointment day.</li>
+                <li class="notePoints">If you are unable to make an appointment or face any other issues, please contact
+                    <b>+91 9978637506</b> for further assistance.</li>
+            </ul>
+        </div>
+    </div>
+    <script defer src="./appointment.js"></script>
+</body>
+
+</html>

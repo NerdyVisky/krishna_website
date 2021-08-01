@@ -1,0 +1,195 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
+}
+
+header {
+    width: 100%;
+    margin-top: 15px;
+    background-color: white;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+header div {
+    flex-basis: 30%;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+header div img {
+    width: 90%;
+}
+
+header div.hospDes {
+    flex: 9;
+    font-size: 250%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header div.hospLogo {
+    flex: 1;
+}
+
+header div.hospLogo img {
+    height: 110px;
+    margin-left: 15px;
+}
+
+header div.hospDes {
+    padding-left: 30px;
+}
+
+header div.headInfo {
+    flex: 4;
+    border-left: 1px solid lightgrey;
+}
+
+.headInfo .phone {
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.mainBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    flex: 3;
+}
+
+.note {
+    flex: 2;
+    background-color: rgb(255, 241, 241);
+    align-self: center;
+    padding: 30px;
+    margin: 0px 20px;
+    border-radius: 15px;
+}
+
+.note ul {
+    margin-top: 20px;
+}
+
+.noteTitle {
+    margin-top: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
+
+.notePoints {
+    margin: 10px;
+    line-height: 1.4;
+    list-style-type: lower-roman;
+}
+
+#tableMain {
+    border-collapse: collapse;
+    margin: 30px auto 0px auto;
+    width: 500px;
+    font-size: 125%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(247, 245, 255);
+}
+
+#tableMain tbody tr td {
+    padding: 15px;
+    border: 1px solid lightgrey;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    letter-spacing: 1.5px;
+    margin: 20px 10px;
+    padding: 0px 25px;
+    width: auto;
+    height: 30px;
+    background-color: rgb(61, 92, 192);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+.buttons button:hover {
+    background-color: forestgreen;
+}
+
+.buttons #confirmbtn {
+    background-color: rgb(26, 107, 26);
+}
+
+.buttons #confirmbtn:hover {
+    background-color: rgb(32, 56, 136);
+}
+
+div~button {
+    width: 30%;
+    height: 25px;
+    margin-left: 475px;
+    background-color: rgb(95, 95, 95);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.4);
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+}
+
+.swal-modal {
+    height: 50%;
+    background-color: white;
+}
+
+.swal-title {
+    font: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.swal-text {
+    width: 100%;
+    text-align: center;
+}
+
+.swal-button {
+    padding: 2px;
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header div.hospLogo img {
+        height: 10vh;
+    }
+    header div.hospDes{
+        font-size: 450%;
+    }
+    .headInfo .phone{
+        font-size: 145%;
+    }
+    .note{
+        margin-left: 20px;
+    }
+}
