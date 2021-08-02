@@ -12,7 +12,7 @@ let conf = new URLSearchParams(location.search);
             document.getElementById("time").innerHTML = slot === "" ? "5PM - 5:30PM" : slot;
 
             function sendMail(params){
-                emailjs.send("service_humtwaz","template_jzz206l",{
+                emailjs.send("service_u8rx2xh","template_r8ey57d",{
                 patient_name: name,
                 patient_number: phone,
                 case: file_case,
