@@ -22,7 +22,7 @@ let conf = new URLSearchParams(location.search);
             
             swal({
                     title: "Appointment Status",
-                    text: "SUCCESS! Your Appointment has been successfully booked. Please reach the hospital within the appointed time.",
+                    text: "SUCCESS! Your Appointment has been successfully booked. Please reach the hospital within the appointed time. To check waiting status, contact +91 9408218912",
                     button: "Exit"
                 });
                 

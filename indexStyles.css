@@ -342,7 +342,9 @@ div.aboutSec div.aboutRight img {
 }
 .gotoservices{
     padding: 15px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(248, 245, 255);
+    color:rgb(1, 25, 104);
+    font-weight: bold;
     display: inline-block;
     margin: 5px 0px 5px 15px;
     border-radius: 50px;
@@ -664,6 +666,9 @@ input[type=text], input[type=tel], input[type=date], select {
   div.contactBlock div.disclaimer{
       flex: 3;
       margin: 20px;
+  }
+  div.contactBlock div.disclaimer ol li{
+      list-style-type: lower-roman;
   }
 
   div.footer{

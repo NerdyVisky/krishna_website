@@ -381,6 +381,7 @@ header div.headInfo div.location a:hover{
 }
 .roomDes p{
     line-height: 1.8;
+    text-align: justify;
 }
 .roomImg{
     flex: 3;
@@ -508,6 +509,9 @@ div.contactBlock div.contact h1,  div.contactBlock div.disclaimer h1{
 div.contactBlock div.disclaimer{
     flex: 3;
     margin: 20px;
+}
+div.contactBlock div.disclaimer ol li{
+    list-style-type: lower-roman;
 }
 
 div.footer{
