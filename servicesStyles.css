@@ -227,7 +227,7 @@ header div.headInfo div.location a:hover{
     }
 }
 .introTitle h1{
-    animation: text 2s 1s 1;
+    animation: text 2s 0.5s 1;
     letter-spacing: 1px;
 }
 
@@ -534,7 +534,7 @@ div.footer{
      border-radius: 5px 0px 0px 5px;
  }
 
- div.footer p.developers a:nth-child(2), div.footer p.developers a:nth-child(3){
+ div.footer p.developers a:nth-child(3), div.footer p.developers a:nth-child(4){
      border-right: 2px solid rgb(196, 195, 195);
  }
 

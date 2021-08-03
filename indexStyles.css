@@ -572,6 +572,10 @@ div.appointDiscTitle h1{
     font-size: 120%;
     list-style-type: disc;
 }
+.note{
+    font-size: 120%;
+    color: red;
+}
 div.discList{
     margin: 10px;
 }
@@ -691,7 +695,7 @@ input[type=text], input[type=tel], input[type=date], select {
        border-radius: 5px 0px 0px 5px;
    }
 
-   div.footer p.developers a:nth-child(2), div.footer p.developers a:nth-child(3){
+   div.footer p.developers a:nth-child(3), div.footer p.developers a:nth-child(4){
        border-right: 2px solid rgb(196, 195, 195);
    }
 
