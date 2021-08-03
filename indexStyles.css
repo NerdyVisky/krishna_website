@@ -238,9 +238,10 @@ div.homeSec div.homeLeft div.homeDoctor {
 }
 
 div.homeSec div.homeLeft div.homeDoctor div.homeDocLogo img {
-    width: 60px;
-    height: 60px;
-    margin: 10px 20px 10px 5px;
+    width: 75px;
+    height: 75px;
+    margin: 10px 10px 10px 15px;
+    border-radius: 50%;
 }
 
 div.homeSec div.homeLeft div.homeDoctor div.homeDocDes {
@@ -259,10 +260,12 @@ div.homeSec div.homeLeft div.homeDoctor div.homeDocDes p {
 
 div.homeSec div.homeRight {
     flex: 1;
+    border-radius: 30px;;
 }
 
 div.homeSec div.homeRight img {
-    width: 650px;
+    width: 100%;
+    border-radius:30px;
 }
 .scrolldown2{
     margin-left: 80%;
@@ -469,6 +472,7 @@ div.visitDocsBlock1 div.visitDocs div.visitDocsImg, div.visitDocsBlock2 div.visi
 div.visitDocsBlock1 div.visitDocs div.visitDocsImg img, div.visitDocsBlock2 div.visitDocs div.visitDocsImg img{
     width: 200px;
     height: 200px;
+    border-radius: 50%;
 }
 div.visitDocsBlock1 div.visitDocs div.visitDocsDes, div.visitDocsBlock2 div.visitDocs div.visitDocsDes{
     margin: 10px;

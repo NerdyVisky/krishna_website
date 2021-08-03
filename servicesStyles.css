@@ -392,6 +392,9 @@ header div.headInfo div.location a:hover{
 	overflow: hidden;
     border-radius: 30px;
 }
+.roomImg:nth-child(2){
+    height: auto;
+}
 .roomImg img{
 	width: 100%;
 	display: block;
