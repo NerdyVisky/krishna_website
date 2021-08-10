@@ -238,10 +238,10 @@ div.homeSec div.homeLeft div.homeDoctor {
 }
 
 div.homeSec div.homeLeft div.homeDoctor div.homeDocLogo img {
-    width: 75px;
+    width: 90px;
     height: 75px;
     margin: 10px 10px 10px 15px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 div.homeSec div.homeLeft div.homeDoctor div.homeDocDes {
@@ -426,19 +426,19 @@ div.teamDocs{
 div.drNilesh{
     display: flex;
     background-color: rgb(240, 240, 240);
-    width: 700px; height: 330px;
+    width: 66%; height: 400px;
     margin: 30px auto 30px auto;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 div.drNileshImg{
     flex: 1;
     margin: auto 0px auto 60px;
 }
 div.drNileshImg img{
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 div.drNileshDes{
     flex: 1;
@@ -773,9 +773,17 @@ input[type=text], input[type=tel], input[type=date], select {
         flex-direction: column;
         width: 100%;
         height: auto;
+        align-items: center;
+        justify-content: center;
     }
     div.drNileshImg{
         margin-top: 20px;
+    }
+    div.drNileshImg img{
+        margin-left: -50px;
+        width: 330px;
+        height: 250px;
+
     }
     div.visitDocsBlock1, div.visitDocsBlock2{
         flex-direction: column;
