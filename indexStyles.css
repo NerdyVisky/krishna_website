@@ -871,7 +871,7 @@ input[type=text], input[type=tel], input[type=date], select {
     .navBar .mainMenu {
         height: 100vh;
         position: fixed;
-        top: 0;
+        top: -125%;
         right: 0;
         left: 0;
         z-index: 1000;
@@ -880,7 +880,7 @@ input[type=text], input[type=tel], input[type=date], select {
         align-items: center;
         background: rgb(1, 26, 102);
         transition: top 1s ease;
-        display: none;
+        display: flex;
     }
     .navBar .mainMenu .closeMenu {
         display: block;
@@ -893,8 +893,8 @@ input[type=text], input[type=tel], input[type=date], select {
         display: block;
         color: white;
     }
-    .navBar .openMenu:hover{
-        background-color: rgb(1, 26, 102);
+    .navBar .openMenu:active{
+        background-color: transparent !important;
     }
     .navBar .mainMenu li a{
         color: white;

@@ -745,7 +745,7 @@ div.topBtn a{
     .navBar .mainMenu {
         height: 100vh;
         position: fixed;
-        top: 0;
+        top: -125%;
         right: 0;
         left: 0;
         z-index: 1000;
@@ -754,7 +754,7 @@ div.topBtn a{
         align-items: center;
         background: rgb(1, 26, 102);
         transition: top 1s ease;
-        display: none;
+        display: flex;
     }
     .navBar .mainMenu .closeMenu {
         display: block;
