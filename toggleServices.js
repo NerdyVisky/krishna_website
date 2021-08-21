@@ -21,7 +21,7 @@ medproLink.addEventListener('click', (e) => {
     console.log("redirected to medpro section");
     close();
     setTimeout(() => {
-        window.location = medpro.href;
+        window.location = medproLink.href;
     }, 500);
 });
 roomsLink.addEventListener('click', (e) => {
