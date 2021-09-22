@@ -677,6 +677,8 @@ input[type=text], input[type=tel], input[type=date], select {
   }
   div.contactBlock div.disclaimer ol li{
       list-style-type: lower-roman;
+      line-height: 1.5;
+      margin: 12px 0px;
   }
 
   div.footer{
